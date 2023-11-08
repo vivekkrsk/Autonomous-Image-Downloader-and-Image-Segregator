@@ -35,13 +35,13 @@ def launch_browser():
     usern = driver.find_element(by = By.NAME, value = "username")
      
     # sends the entered username
-    usern.send_keys('nscrapper')
+    usern.send_keys('WRITE YOUR USERNAME HERE')
  
     # finds the password box
     passw = driver.find_element(by = By.NAME, value = "password")
  
     # sends the entered password
-    passw.send_keys('sendmenudes')
+    passw.send_keys('WRITE YOUR PASSWORD HERE')
  
     # sends the enter key
     passw.send_keys(Keys.RETURN)
@@ -99,7 +99,7 @@ def download(img_src):
         n.write(str(number))
 
 def explore_post(driver):
-    driver.get('https://www.instagram.com/hot.bikini.girls.it/?hl=en')
+    driver.get('https://www.instagram.com')  # link of profile
 
     img_src = set()
     last_height = driver.execute_script("return document.body.scrollHeight")
